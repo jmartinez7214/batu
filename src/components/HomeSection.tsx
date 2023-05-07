@@ -1,8 +1,11 @@
 export const HomeSection = (): JSX.Element => {
   return (
     <div
-      className="h-screen bg-[url('../../public/images/batu-dark.jpg')] bg-cover bg-center"
+      className="h-screen bg-cover bg-center"
       id="home"
+      style={{
+        backgroundImage: `url('/images/batu-dark.jpg')`,
+      }}
     ></div>
   )
 }
