@@ -1,13 +1,6 @@
 import { useRef } from 'react'
-import Image, { type StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { useInView } from 'framer-motion'
-import genesis from '../../public/images/genesis.jpg'
-import cenizas_caidas from '../../public/images/cenizas_caidas.jpg'
-import corruptoria from '../../public/images/corruptoria.jpg'
-import toxicolandia from '../../public/images/toxicolandia.jpg'
-import cenizas_del_genesis from '../../public/images/cenizas_del_genesis.jpg'
-import toque_de_quiebra from '../../public/images/toque_de_quiebra.jpg'
-import mono_mascara from '../../public/images/mono_mascara.jpg'
 
 export const DiscographySection = (): JSX.Element => {
   const ref = useRef(null)
@@ -28,28 +21,28 @@ export const DiscographySection = (): JSX.Element => {
             <DiscographyCard
               title="Vol. 1 Genesis"
               subTitle="Album"
-              imgUrl={genesis}
+              imgUrl="/images/genesis.jpg"
             />
           </div>
           <div>
             <DiscographyCard
               title="Vol. 2 Cenizas Caidas"
               subTitle="Album"
-              imgUrl={cenizas_caidas}
+              imgUrl="/images/cenizas_caidas.jpg"
             />
           </div>
           <div>
             <DiscographyCard
               title="Vol. 3 Corruptoria"
               subTitle="Album"
-              imgUrl={corruptoria}
+              imgUrl="/images/corruptoria.jpg"
             />
           </div>
           <div ref={ref}>
             <DiscographyCard
               title="Vol. 4 Toxicolandia"
               subTitle="Album"
-              imgUrl={toxicolandia}
+              imgUrl="/images/toxicolandia.jpg"
             />
           </div>
         </div>
@@ -58,21 +51,21 @@ export const DiscographySection = (): JSX.Element => {
             <DiscographyCard
               title="Cenizas del Genesis"
               subTitle="Album"
-              imgUrl={cenizas_del_genesis}
+              imgUrl="/images/cenizas_del_genesis.jpg"
             />
           </div>
           <div className="col-span-8 lg:col-span-2">
             <DiscographyCard
               title="Toque de Quiebra"
               subTitle="Sencillo"
-              imgUrl={toque_de_quiebra}
+              imgUrl="/images/toque_de_quiebra.jpg"
             />
           </div>
           <div className="col-span-8 lg:col-span-2">
             <DiscographyCard
               title="Mono Mascara"
               subTitle="Sencillo"
-              imgUrl={mono_mascara}
+              imgUrl="/images/mono_mascara.jpg"
             />
           </div>
         </div>
@@ -84,7 +77,7 @@ export const DiscographySection = (): JSX.Element => {
 interface DiscographyData {
   title: string
   subTitle: string
-  imgUrl: StaticImageData
+  imgUrl: string
 }
 
 const DiscographyCard = ({
