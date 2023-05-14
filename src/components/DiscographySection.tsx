@@ -21,7 +21,7 @@ export const DiscographySection = (): JSX.Element => {
             <DiscographyCard
               title="Vol. 1 Genesis"
               subTitle="Album"
-              imgUrl="/images/genesis.jpg"
+              imgUrl="/images/genesis.png"
             />
           </div>
           <div>
