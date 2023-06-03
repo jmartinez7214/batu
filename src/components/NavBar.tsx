@@ -34,25 +34,25 @@ export default function NavBar(): JSX.Element {
         </button>
 
         <ul className="hidden md:flex">
-          <li className="p-4">
+          <li className="p-4 hover:text-neutral-300 transition duration-100">
             <button
               onClick={() => {
                 handleClickScroll('discography')
               }}
             >
-              Discografia
+              Discografía
             </button>
           </li>
-          <li className="p-4">
+          <li className="p-4 hover:text-neutral-300 transition duration-100">
             <button
               onClick={() => {
                 handleClickScroll('biography')
               }}
             >
-              Biografia
+              Biografía
             </button>
           </li>
-          <li className="p-4">
+          <li className="p-4 hover:text-neutral-300 transition duration-100">
             <button
               onClick={() => {
                 handleClickScroll('footer')
@@ -91,7 +91,7 @@ export default function NavBar(): JSX.Element {
                   handleClickScroll('discography')
                 }}
               >
-                Discografia
+                Discografía
               </button>
             </li>
             <li className="p-4 border-b border-gray-600">
@@ -100,7 +100,7 @@ export default function NavBar(): JSX.Element {
                   handleClickScroll('biography')
                 }}
               >
-                Biografia
+                Biografía
               </button>
             </li>
             <li className="p-4 border-b border-gray-600">
